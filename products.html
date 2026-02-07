@@ -4,100 +4,73 @@
     <title>My Meesho Store</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background: #f3f3f3;
             margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #141e30, #243b55);
+            color: white;
             text-align: center;
         }
 
-        h1 {
-            background: #111;
-            color: white;
-            padding: 20px;
-            margin: 0;
-            letter-spacing: 1px;
-        }
-
-        .container {
+        .hero {
+            height: 100vh;
             display: flex;
+            flex-direction: column;
             justify-content: center;
-            flex-wrap: wrap;
-            padding: 40px;
-            gap: 30px;
+            align-items: center;
         }
 
-        .product {
-            background: white;
-            width: 260px;
-            padding: 20px;
-            border-radius: 15px;
-            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
-            transition: all 0.4s ease;
-            transform-style: preserve-3d;
+        h1 {
+            font-size: 50px;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
         }
 
-        .product:hover {
-            transform: rotateY(8deg) rotateX(5deg) scale(1.05);
-            box-shadow: 0 25px 50px rgba(0,0,0,0.25);
-        }
-
-        .product img {
-            width: 100%;
-            border-radius: 10px;
-        }
-
-        h3 {
-            margin: 15px 0 10px;
+        p {
+            font-size: 20px;
+            opacity: 0.8;
         }
 
         .btn {
-            display: block;
-            margin-top: 10px;
-            padding: 10px;
+            margin-top: 30px;
+            padding: 12px 25px;
+            font-size: 16px;
             text-decoration: none;
-            border-radius: 8px;
-            font-weight: bold;
+            border-radius: 30px;
             transition: 0.3s;
         }
 
-        .meesho {
+        .shop-btn {
             background: #ff4d6d;
             color: white;
         }
 
-        .meesho:hover {
+        .shop-btn:hover {
             background: #e43f5a;
+            transform: scale(1.05);
         }
 
-        .whatsapp {
+        .whatsapp-btn {
             background: #25D366;
             color: white;
+            margin-left: 15px;
         }
 
-        .whatsapp:hover {
+        .whatsapp-btn:hover {
             background: #1ebc59;
+            transform: scale(1.05);
         }
     </style>
 </head>
 <body>
 
-<h1>My Meesho Store</h1>
+<div class="hero">
+    <h1>Welcome to My Meesho Store</h1>
+    <p>Trendy Jewellery | Best Quality | Affordable Prices</p>
 
-<div class="container">
-
-    <div class="product">
-        <img src="bracelet.jpg" alt="Bracelet">
-        <h3>Gold Plated Stone Bracelet</h3>
-
-        <a href="https://www.meesho.com/women-jeweler-bracelets-bangles-bracelets-gold-plated-stone-studded/p/c75v0e" target="_blank" class="btn meesho">
-            View on Meesho
-        </a>
-
-        <a href="https://wa.me/917898510840" target="_blank" class="btn whatsapp">
-            Order on WhatsApp
-        </a>
+    <div>
+        <a href="products.html" class="btn shop-btn">View Products</a>
+        <a href="https://wa.me/917898510840" class="btn whatsapp-btn">Contact on WhatsApp</a>
     </div>
-
 </div>
 
 </body>
