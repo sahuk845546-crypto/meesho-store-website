@@ -1,27 +1,79 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My Meesho Store</title>
+    <title>Sahu Ji Enterprises</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; }
-        .btn {
-            background: #ff4d6d;
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to right, #000000, #1a1a1a);
             color: white;
-            padding: 12px 20px;
-            text-decoration: none;
-            font-size: 18px;
-            border-radius: 5px;
-            display: inline-block;
+            text-align: center;
+        }
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 55px;
+            color: gold;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 20px;
+            color: #ddd;
+        }
+
+        .btn {
             margin-top: 30px;
+            padding: 12px 30px;
+            font-size: 16px;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: 0.3s;
+            font-weight: bold;
+        }
+
+        .shop-btn {
+            background: gold;
+            color: black;
+        }
+
+        .shop-btn:hover {
+            background: #e6c200;
+            transform: scale(1.08);
+        }
+
+        .whatsapp-btn {
+            background: #25D366;
+            color: white;
+            margin-left: 15px;
+        }
+
+        .whatsapp-btn:hover {
+            background: #1ebc59;
+            transform: scale(1.08);
         }
     </style>
 </head>
 <body>
 
-<h1>Welcome to My Meesho Store</h1>
-<p>Click below to see all products 👇</p>
+<div class="hero">
+    <h1>Sahu Ji Enterprises</h1>
+    <p>Premium Jewellery Collection | Trusted Quality | Best Prices</p>
 
-<a href="products.html" class="btn">View Products</a>
+    <div>
+        <a href="products.html" class="btn shop-btn">View Products</a>
+        <a href="https://wa.me/917898510840" class="btn whatsapp-btn">Contact on WhatsApp</a>
+    </div>
+</div>
 
 </body>
 </html>
